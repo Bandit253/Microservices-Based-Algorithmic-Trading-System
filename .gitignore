@@ -4,3 +4,7 @@ Storage/minio/storage/.minio.sys
 Storage/superset/Additional
 Storage/minio/storage/mlflow-models/
 Storage/minio/storage/support-files/
+*.pyc
+Storage/q_pack/db_pack/oanda/__pycache__/*.pyc
+Storage/q_pack/db_pack/oanda/__pycache__/fx_oanda_daily.cpython-37.pyc
+Storage/q_pack/q_credentials/__pycache__/oanda_cred.cpython-37.pyc

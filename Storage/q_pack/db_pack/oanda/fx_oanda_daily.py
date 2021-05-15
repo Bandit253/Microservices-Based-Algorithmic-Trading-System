@@ -185,6 +185,7 @@ def main():
     Bucket="airflow-files"
     Key="interested_tickers.xlsx"
     read_file = s3.get_object(Bucket=Bucket, Key=Key)
+    # df_tickers = pd.read_excel(read_file['Body'],sep=',',sheet_name="daily")
     df_tickers = pd.read_excel(io.BytesIO(read_file['Body'].read()),sep=',',sheet_name="daily")
 
 
